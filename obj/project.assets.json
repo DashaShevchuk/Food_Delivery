@@ -12535,23 +12535,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\sshevchuckaa\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\Food_Delivery.csproj",
+      "projectUniqueName": "C:\\Users\\sshevchuckaa\\aaaa\\FoodDelivery\\Food_Delivery\\Food_Delivery.csproj",
       "projectName": "Food_Delivery",
-      "projectPath": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\Food_Delivery.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\obj\\",
+      "projectPath": "C:\\Users\\sshevchuckaa\\aaaa\\FoodDelivery\\Food_Delivery\\Food_Delivery.csproj",
+      "packagesPath": "C:\\Users\\sshevchuckaa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sshevchuckaa\\aaaa\\FoodDelivery\\Food_Delivery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sshevchuckaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

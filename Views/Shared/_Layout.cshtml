@@ -36,8 +36,16 @@
                     <li><a asp-area="">Акції</a></li>
                     <li><a asp-area="">Оплата і доставка</a></li>
                     <li><a asp-area="">Контакти</a></li>
-                    <li><a asp-area="">Мій акаунт</a></li>
+                    <li><a asp-area="" asp-controller="Account" asp-action="Login">Увійти</a></li>
+                    <li>
+                        <form class="form-inline my-2 my-lg-0" asp-controller="Account" asp-action="Logout">
+                            <button class="btn btn-outline-success my-2 me-sm-0" type="submit">
+                                Logout
+                            </button>
+                        </form>
+                    </li>
                 </ul>
+              
             </div>
         </div>
     </nav>

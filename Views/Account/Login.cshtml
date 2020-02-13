@@ -1,0 +1,29 @@
+﻿@model Food_Delivery.View_Models.LoginViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Мій акаунт</title>
+</head>
+<body>
+    <form class="login" asp-action="Login" asp-controller="Account">
+        <h1 class="header">Увійти</h1>
+        <p class="mass">З поверненням! Увійдіть у свій акаунт</p>
+        <div>
+            <label asp-for="Login">Адреса Електронної Пошти *</label><br />
+            <input asp-for="Login" />
+            <span asp-validation-for="Login"></span>
+        </div>
+        <div>
+            <label asp-for="Password">Пароль *</label><br />
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div>
+            <input class ="submit" type="submit" value="Увійти" />
+        </div>
+    </form>
+</body>
+</html>
