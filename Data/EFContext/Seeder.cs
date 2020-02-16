@@ -152,5 +152,193 @@ namespace Food_Delivery.Data.EFContext
                 context.SaveChanges();
             }
         }
+        public static async void SeedProducts(IServiceProvider services, IHostingEnvironment env, IConfiguration config)
+        {
+            using (var scope = services.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<EFDbContext>();
+                Product product = new Product
+                {
+                    Name = "Рол Макі Чука",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-74-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Салат чука",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з огірком",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-71-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Огірок, конжут",
+                    Price = 45,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-70-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Лосось",
+                    Price = 69,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з гострим лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-69-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Лосось, соус спайсі",
+                    Price = 75,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з гострою креветкою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-66-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Креветка, соус спайсі",
+                    Price = 75,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з авокадо",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-68-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Авокадо",
+                    Price = 55,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з гострою куркою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-67-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Копчена курка, соус спайсі, кунжут",
+                    Price = 65,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з гострим тунцем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-65-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Тунець, соус спайсі",
+                    Price = 82,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з беконом",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-64-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Бекон, зелена цибуля",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з вугрем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-63-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Вугор, соус унагі, кунжут",
+                    Price = 79,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі філа ікура",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-61-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Філадельфія, червона ікра",
+                    Price = 65,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з тунцем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-62-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Тунець",
+                    Price = 81,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі томато",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-60-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Помідор",
+                    Price = 45,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі з копченим лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-57-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Копчений лосось",
+                    Price = 75,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Макі вакаба RED",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-55-s-300x200.jpg",
+                    Weight = 110,
+                    Ingredients = "Болгарський перець червоний",
+                    Price = 45,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 1
+                };
+                context.Products.Add(product);
+                context.SaveChanges();
+            }
+        }
     }
 }

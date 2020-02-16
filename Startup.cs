@@ -80,12 +80,17 @@ namespace Food_Delivery
             //Seeder.SeedRoles(app.ApplicationServices, env, this.Configuration);
             //Seeder.SeedUsers(app.ApplicationServices, env, this.Configuration);
             //Seeder.SeedCategories(app.ApplicationServices, env, this.Configuration);
+            //Seeder.SeedProducts(app.ApplicationServices, env, this.Configuration);
 
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                 name: "filter",
+                 template: "Products/{action}/{category?}",
+                 defaults: new { controller = "Products", action = "ListProducts" });
             });
         }
     }

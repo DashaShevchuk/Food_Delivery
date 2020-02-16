@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\Food_Delivery.csproj": {}
+    "C:\\Users\\user\\Desktop\\Work\\Food_Delivery_\\Food_Delivery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\Food_Delivery.csproj": {
+    "C:\\Users\\user\\Desktop\\Work\\Food_Delivery_\\Food_Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\Food_Delivery.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery_\\Food_Delivery.csproj",
         "projectName": "Food_Delivery",
-        "projectPath": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\Food_Delivery.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery_\\Food_Delivery.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery\\Food_Delivery\\Food_Delivery\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Work\\Food_Delivery_\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
