@@ -1,0 +1,51 @@
+﻿@model Food_Delivery.View_Models.RegisterViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Мій акаунт</title>
+</head>
+<body>
+    <form class="register" asp-controller="Account" asp-action="Register">
+        <h1 class="header">Реєстрація</h1>
+        <p class="mass">Створіть свій власний обліковий запис</p>
+        <div>
+            <label asp-for="Login">Логін *</label><br />
+            <input asp-for="Login" />
+            <span asp-validation-for="Login"></span>
+        </div>
+        <div>
+            <label asp-for="Email">Адреса Електронної Пошти *</label><br />
+            <input asp-for="Email" />
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div>
+            <label asp-for="FirstName">Ім'я *</label><br />
+            <input asp-for="FirstName" />
+            <span asp-validation-for="FirstName"></span>
+        </div>
+        <div>
+            <label asp-for="LastName">Прізвище *</label><br />
+            <input asp-for="LastName" />
+            <span asp-validation-for="LastName"></span>
+        </div>
+        <div>
+            <label asp-for="Password">Пароль *</label><br />
+            <input asp-for="Password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div>
+            <label asp-for="PasswordConfirm">Повторіть пароль *</label><br />
+            <input asp-for="PasswordConfirm" />
+            <span asp-validation-for="PasswordConfirm"></span>
+        </div>
+        <div>
+            <input type="submit" class="submit" value="Регистрация" />
+        </div>
+    </form>
+
+</body>
+</html>
+

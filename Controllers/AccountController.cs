@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Food_Delivery.Data.EFContext;
 using Food_Delivery.Data.Models;
@@ -75,39 +76,63 @@ namespace Food_Delivery.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
+            Regex regexemail = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Regex regexpassword = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,24}$");
+
             if (ModelState.IsValid)
             {
-                UserProfile userProfile = new UserProfile
+                Match matchemail = regexemail.Match(model.Email);
+                Match matchpassword = regexpassword.Match(model.Password);
+                if (model.FirstName == "" || model.LastName == "" || model.Login == "" || model.Password == "" || model.PasswordConfirm == "")
                 {
-                    FirstName = model.FirstName,
-                    LastName = model.LastName
-                };
-
-                DbUser user = new DbUser
+                    ModelState.AddModelError(string.Empty, "Пусте поле");
+                }
+                else if (!matchemail.Success)
                 {
-                    Email = model.Login,
-                    UserName = model.Login,
-                    UserProfile = userProfile
-                };
-
-                var rolename = "User";
-                var result = await _userManager.CreateAsync(user, model.Password);
-                result = _userManager.AddToRoleAsync(user, rolename).Result;
-
-                if (result.Succeeded)
+                    ModelState.AddModelError(string.Empty, "Не коректний email");
+                }
+                else if (!matchpassword.Success)
                 {
-                    await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    ModelState.AddModelError(string.Empty, "Не коректний пароль");
+                }
+                else if (model.Password != model.PasswordConfirm)
+                {
+                    ModelState.AddModelError(string.Empty, "Паролі не збігаються");
                 }
                 else
                 {
-                    foreach (var error in result.Errors)
+                    UserProfile userProfile = new UserProfile
                     {
-                        ModelState.AddModelError(string.Empty, error.Description);
+                        FirstName = model.FirstName,
+                        LastName = model.LastName
+                    };
+
+                    DbUser user = new DbUser
+                    {
+                        Email = model.Login,
+                        UserName = model.Login,
+                        UserProfile = userProfile
+                    };
+
+                    var rolename = "User";
+                    var result = await _userManager.CreateAsync(user, model.Password);
+                    result = _userManager.AddToRoleAsync(user, rolename).Result;
+
+                    if (result.Succeeded)
+                    {
+                        await _signInManager.SignInAsync(user, false);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
                     }
                 }
             }
-            return View(model);
+                return View(model);
         }
 
         private async Task Authenticate(string userName)
