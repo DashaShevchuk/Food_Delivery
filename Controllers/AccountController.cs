@@ -76,59 +76,35 @@ namespace Food_Delivery.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            Regex regexemail = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Regex regexpassword = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,24}$");
-
             if (ModelState.IsValid)
             {
-                Match matchemail = regexemail.Match(model.Email);
-                Match matchpassword = regexpassword.Match(model.Password);
-                if (model.FirstName == "" || model.LastName == "" || model.Login == "" || model.Password == "" || model.PasswordConfirm == "")
+                UserProfile userProfile = new UserProfile
                 {
-                    ModelState.AddModelError(string.Empty, "Пусте поле");
-                }
-                else if (!matchemail.Success)
+                    FirstName = model.FirstName,
+                    LastName = model.LastName
+                };
+
+                DbUser user = new DbUser
                 {
-                    ModelState.AddModelError(string.Empty, "Не коректний email");
-                }
-                else if (!matchpassword.Success)
+                    Email = model.Login,
+                    UserName = model.Login,
+                    UserProfile = userProfile
+                };
+
+                var rolename = "User";
+                var result = await _userManager.CreateAsync(user, model.Password);
+                result = _userManager.AddToRoleAsync(user, rolename).Result;
+
+                if (result.Succeeded)
                 {
-                    ModelState.AddModelError(string.Empty, "Не коректний пароль");
-                }
-                else if (model.Password != model.PasswordConfirm)
-                {
-                    ModelState.AddModelError(string.Empty, "Паролі не збігаються");
+                    await _signInManager.SignInAsync(user, false);
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    UserProfile userProfile = new UserProfile
+                    foreach (var error in result.Errors)
                     {
-                        FirstName = model.FirstName,
-                        LastName = model.LastName
-                    };
-
-                    DbUser user = new DbUser
-                    {
-                        Email = model.Login,
-                        UserName = model.Login,
-                        UserProfile = userProfile
-                    };
-
-                    var rolename = "User";
-                    var result = await _userManager.CreateAsync(user, model.Password);
-                    result = _userManager.AddToRoleAsync(user, rolename).Result;
-
-                    if (result.Succeeded)
-                    {
-                        await _signInManager.SignInAsync(user, false);
-                        return RedirectToAction("Index", "Home");
-                    }
-                    else
-                    {
-                        foreach (var error in result.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
             }

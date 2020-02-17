@@ -8,22 +8,23 @@ namespace Food_Delivery.View_Models
 {
     public class RegisterViewModel
     {
-        [Required]
+        [Required(ErrorMessage ="Введіть логін")]
         [Display(Name = "Login")]
         public string Login { get; set; }
 
 
         [Required]
         [Display(Name = "Email")]
+        [RegularExpression(@" ^ ([\w\.\-] +)@([\w\-] +)((\.(\w){2, 3})+)$", ErrorMessage =("Некоректний email"))]
         public string Email { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Введіть ім'я")]
         [Display(Name = "FirstName")]
         public string FirstName { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Введіть прізвище")]
         [Display(Name = "LastName")]
         public string LastName { get; set; }
 
@@ -31,13 +32,14 @@ namespace Food_Delivery.View_Models
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Пароль")]
+        [RegularExpression(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,24}$", ErrorMessage = ("Некоректний пароль"))]
         public string Password { get; set; }
 
 
         [Required]
-        [Compare("Password", ErrorMessage = "Пароли не совпадают")]
+        [Compare("Password", ErrorMessage = "Паролі не співпадають")]
         [DataType(DataType.Password)]
-        [Display(Name = "Подтвердить пароль")]
+        [Display(Name = "Подтвердіть пароль")]
         public string PasswordConfirm { get; set; }
     }
 }

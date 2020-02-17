@@ -458,6 +458,42 @@ namespace Food_Delivery.Data.EFContext
                     CategoryId = 2
                 };
                 context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Хакамото",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-55-s-300x200.jpg",
+                    Weight = 205,
+                    Ingredients = "Креветки, окунь, авокадо, омлет, масаго",
+                    Price = 130,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 2
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Катемако",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-55-s-300x200.jpg",
+                    Weight = 205,
+                    Ingredients = "Бекон, помідор, куряче яйце, соус спайсі, стружка тунця",
+                    Price = 79,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 2
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Фреш з вугрем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-55-s-300x200.jpg",
+                    Weight = 185,
+                    Ingredients = "Вугор, айсберг, огірок, японський майонез",
+                    Price = 137,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 2
+                };
+                context.Products.Add(product);
                 context.SaveChanges();
             }
         }
