@@ -13,9 +13,9 @@ namespace Food_Delivery.View_Models
         public string Login { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Введіть пошту")]
         [Display(Name = "Email")]
-        [RegularExpression(@" ^ ([\w\.\-] +)@([\w\-] +)((\.(\w){2, 3})+)$", ErrorMessage =("Некоректний email"))]
+        [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", ErrorMessage =("Некоректний email"))]
         public string Email { get; set; }
 
 
@@ -29,14 +29,14 @@ namespace Food_Delivery.View_Models
         public string LastName { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Введіть пароль")]
         [DataType(DataType.Password)]
         [Display(Name = "Пароль")]
         [RegularExpression(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,24}$", ErrorMessage = ("Некоректний пароль"))]
         public string Password { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "Підтвердіть пароль")]
         [Compare("Password", ErrorMessage = "Паролі не співпадають")]
         [DataType(DataType.Password)]
         [Display(Name = "Подтвердіть пароль")]

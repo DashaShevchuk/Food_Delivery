@@ -103,7 +103,7 @@ li {
     font-size:16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.registr {
+/*.registr {
     background-color: #D81111;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -116,12 +116,12 @@ li {
 }
     .registr:hover {
         background-color: #A91515;
-    }
-.buttons_register{
+    }*/
+/*.buttons_register{
     display:flex;
     flex-direction:row;
     margin-top:10px;
-}
+}*/
 .div-login{
     margin-top:10px;
     margin-bottom:10px;

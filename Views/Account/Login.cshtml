@@ -12,7 +12,7 @@
         <h1 class="header">Увійти</h1>
         <p class="mass">З поверненням! Увійдіть у свій акаунт</p>
         <div class="div-login">
-            <label asp-for="Login">Адреса Електронної Пошти *</label><br />
+            <label asp-for="Login">Логін *</label><br />
             <input asp-for="Login" />
             <span asp-validation-for="Login"></span>
         </div>
@@ -21,12 +21,9 @@
             <input asp-for="Password" />
             <span asp-validation-for="Password"></span>
         </div>
-        <div class="buttons_register">
+        <div>
             <div>
                 <input class="submit" type="submit" value="Увійти" />
-            </div>
-            <div>
-                <button class="registr" asp-controller="Account" asp-action="Register">Зареєструватися</button>
             </div>
         </div>
     </form>
