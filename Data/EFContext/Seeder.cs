@@ -965,7 +965,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Веган",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/700-010-Темпура-веган-300x200.png",
                     Weight = 220,
                     Ingredients = "Авокадо, огірок, айсберг, помідор, японський майонез, кляр",
                     Price = 94,
@@ -977,7 +977,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Лайт",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/темпура_PNG-300x200.jpg",
                     Weight = 195,
                     Ingredients = "Курка копчена, огірок, айсберг, японський майонез, кляр",
                     Price = 106,
@@ -989,7 +989,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Гарячий Цезар",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/PNG-1-1-300x200.jpg",
                     Weight = 185,
                     Ingredients = "Курка копчена, помідор, соус Цезар, айсберг, кляр",
                     Price = 102,
@@ -1001,7 +1001,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Гранд",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/PNG-1-300x200.jpg",
                     Weight = 205,
                     Ingredients = "Лосось, авокадо, помідор, японський майонез, кляр",
                     Price = 136,
@@ -1013,7 +1013,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Хіт",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/2_PNG-1-1-300x200.jpg",
                     Weight = 200,
                     Ingredients = "Лосось, вугор, авокадо, філадеьфія, кляр",
                     Price = 152,
@@ -1025,7 +1025,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Сякі",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/PNG-300x200.png",
                     Weight = 195,
                     Ingredients = "Лосось теріякі, філадельфія, огірок, кляр",
                     Price = 106,
@@ -1037,7 +1037,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Дуос",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/2_PNG-1-300x200.jpg",
                     Weight = 200,
                     Ingredients = "Лосось, креветка, огірок, соус Спайсі, кляр",
                     Price = 152,
@@ -1049,7 +1049,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Ебі",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/tempura-ebi-300x200.png",
                     Weight = 200,
                     Ingredients = "Криветка, огірок, помідор, соус Спайсі",
                     Price = 136,
@@ -1061,7 +1061,7 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура копчений лосось",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/ролл-катана-300x200.jpg",
                     Weight = 200,
                     Ingredients = "Лосось копчений, омлет, огірок, соус Спайсі, кляр",
                     Price = 94,
@@ -1073,13 +1073,803 @@ namespace Food_Delivery.Data.EFContext
                 product = new Product
                 {
                     Name = "Темпура Чікен",
-                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1-s-300x200.jpg",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/700-001-Темпура-чікен-300x200.jpg",
                     Weight = 210,
                     Ingredients = "Курка копчена, томат, омлет, унагі соус, кунжут, кляр",
                     Price = 117,
                     Count = 1,
                     IsOrdered = false,
                     CategoryId = 3
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Сякі Дуо",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/filadelfia-duo_PNG-300x200.png",
+                    Weight = 240,
+                    Ingredients = "Лосось, філадельфія, огірок, авокадо",
+                    Price = 165,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Філадельфія Мікс",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/03/saketay_PNG-300x200.png",
+                    Weight = 220,
+                    Ingredients = "Курка копчена, омлет, помідор, лосось, Філадельфія",
+                    Price = 130,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Шок",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-53-s.jpg",
+                    Weight = 225,
+                    Ingredients = "Лосось, огірок, авокадо, масаго, філадельфія",
+                    Price = 165,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Крабс",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-52-s-300x200.jpg",
+                    Weight = 235,
+                    Ingredients = "Лосось, сніжний краб, авокадо, огірок, філадельфія",
+                    Price = 149,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Класік",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-51-s-300x200.jpg",
+                    Weight = 240,
+                    Ingredients = "Лосось, філадельфія",
+                    Price = 130,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Унагі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-54-s-300x200.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, вугор, філадельфія",
+                    Price = 170,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Ікура",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-48-s-300x200.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, червона ікра, філадельфія",
+                    Price = 149,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Каппа",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-50-s-300x200.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, огірок, філадельфія",
+                    Price = 130,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Кані",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-49-s.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, сніжний краб, філадельфія",
+                    Price = 125,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Масаго",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-47-s.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, масаго, філадельфія",
+                    Price = 145,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Гавайська",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-45-s.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, ананас, філадельфія",
+                    Price = 138,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Ебі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-46-s-300x200.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, креветки, філадельфія",
+                    Price = 155,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Авокадо",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-44-s-300x200.jpg",
+                    Weight = 210,
+                    Ingredients = "Лосось, авокадо, філадельфія",
+                    Price = 135,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рол Філадельфія Гінгер",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-43-s.jpg",
+                    Weight = 220,
+                    Ingredients = "Лосось, імбир, філадельфія, ікра масаго",
+                    Price = 125,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 4
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс філа тунець",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-96-s-300x200.jpg",
+                    Weight = 45,
+                    Ingredients = "Тунець, філадельфія",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс філа вугор",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-94-s-300x200.jpg",
+                    Weight = 45,
+                    Ingredients = "Вугор, філадельфія",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс філа креветка",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-95-s-300x200.jpg",
+                    Weight = 45,
+                    Ingredients = "Креветка, філадельфія",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс філа лосось",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-93-s-300x200.jpg",
+                    Weight = 45,
+                    Ingredients = "Лосось, філадельфія",
+                    Price = 41,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс чука",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-92-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Салат чука, кунжут",
+                    Price = 31,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс масаго",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-91-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Ікра масаго",
+                    Price = 45,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс ікура",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-90-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Ікра червона",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс з тунцем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-88-s-300x200.jpg",
+                    Weight = 40,
+                    Ingredients = "Тунець, соус спайсі",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс з сніжним крабом",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-89-s-300x200.jpg",
+                    Weight = 40,
+                    Ingredients = "Сніжний краб, соус спайсі",
+                    Price = 35,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс з креветкою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-85-s-300x200.jpg",
+                    Weight = 40,
+                    Ingredients = "Креветка, соус спайсі",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Суші лосось",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-75-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Лосось",
+                    Price = 29,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс з вугрем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-84-s-300x200.jpg",
+                    Weight = 40,
+                    Ingredients = "Вугор, соус спайсі",
+                    Price = 49,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Спайс з копченим лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-83-s-300x200.jpg",
+                    Weight = 40,
+                    Ingredients = "Копчений лосось, соус спайсі",
+                    Price = 41,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                product = new Product
+                {
+                    Name = "Спайс з лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-82-s-300x200.jpg",
+                    Weight = 40,
+                    Ingredients = "Лосось, соус спайсі",
+                    Price = 41,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Суші тунець",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-81-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Тунець",
+                    Price = 39,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Суші копчений лосось",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-76-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Копчений лосось",
+                    Price = 33,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Суші вугор",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-77-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Вугор",
+                    Price = 39,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Суші креветка",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-78-s-300x200.jpg",
+                    Weight = 35,
+                    Ingredients = "Креветка",
+                    Price = 39,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 5
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Комбо Вега",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2020/02/kombovega-300x200.png",
+                    Ingredients = "Місо, піца Вегетеріанська, Bonaqa негазована",
+                    Price = 200,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Комбо 4",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2020/02/kombo356-300x200.png",
+                    Weight = 0,
+                    Ingredients = "Том Кха Торі, піца Салями, Coca-Cola",
+                    Price = 240,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Комбо 1",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/kombo210-300x200.png",
+                    Weight = 0,
+                    Ingredients = "Рол сирний, Рол Боніто Сякі, Удон зі свининою, Coca-Cola",
+                    Price = 210,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Комбо 2",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/kombo200-300x200.png",
+                    Weight = 0,
+                    Ingredients = "Рол сирний, Рол Каліфорнія, Піца Шинок, Coca-Cola",
+                    Price = 200,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Комбо 3",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/kombo250-300x200.png",
+                    Weight = 0,
+                    Ingredients = "Рол Боніто Сякі, Рол Япошка, Піца Реджина, 2 Coca-Cola",
+                    Price = 250,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Сирне",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/01/gggggggggg-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол сирний, Рол масаго чіз, Рол Філадельфія класік, Рол Філадельфія каппа",
+                    Price = 349,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті 2 кіло",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/11/456456456-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол з беконом, Ебі тай, Сирний Каліфорнія, Боніто Сякі, Лео, Самурай, Кані чіз, Япошка",
+                    Price = 599,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Сенсей",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-100-1-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Макі лосось (лосось); Рол Макі огірок (огірок, кунжут); Рол Філадельфія класік (лосось, філадельфія); Рол Амай (лосось, філадельфія, помідор, японський майонез, омлет); Рол Флеш (лосось, авокадо, японський майонез, омлет)",
+                    Price = 475,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Суші",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-102-s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Суші лосось 4 шт; Суші Вугор 4 шт; Суші Тунець 2 шт; Суші Креветка 2 шт",
+                    Price = 387,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті МЕГА",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-101-s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Макі з сніжним крабом (сніжний краб); Рол Макі філадельфія (філадельфія); Рол Макі огірок (огірок, кунжут); Рол Макі лосось (лосось); Рол Філадельфія Класік (лосось, філадельфія); Рол Хакамото (креветка, авокадо, омлет, окунь, масаго); Рол Дракон (вугор, філадельфія, огірок, масаго); Рол Катемако (бекон, яйце, свіжий помідор, спайсі соус, стружка тунця); Рол Фреш з Вугрем (вугор, айсберг, огірок, японський майонез, кунжут); Рол Сахара (сніжний краб, філадельфія, помідор, огірок, омлет)",
+                    Price = 927,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Вега",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-98-s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Макі огірок (огірок, кунжут); Рол Макі авокадо (авокадо); Рол Вакаба RED (перець болгарський червоний) ;Рол Маки чука (салат чука);Рол Макі томато (свіжий помідор)",
+                    Price = 267,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Сякі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-99-s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Половина Ролу Філадельфія сякі (лосось, філадельфія); Рол Макі лосось (лосось); Суші лосось3 шт (лосось)",
+                    Price = 228,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті 2 2",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-97-s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Макі філа ікура ( філадельфія, ікра червона); Рол Макі огірок (огірок, кунжут ); Рол Окінава ( сніжний краб, огірок, омлет, японський майонез, масаго); Рол Філадельфія Каппа (лосось, філадельфія, огірок)",
+                    Price = 320,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Ото-ото",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/113s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Філадельфія Каппа ( лосось, огірок, філадельфія ); Рол Філадельфія Шок ( лосось, авокадо, ікра масаго, огірок, філадельфія); Рол Кінг ( лосось, огірок, філадельфія, ікра масаго); Рол Макі з огірком ( огірок, кунжут)",
+                    Price = 455,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті 9 смаків",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-1009-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Блек (копчений лосось, копчена курка, філадельфія, масаго); Рол Катемако ( бекон, помідор, яйце куряче, стружка тунця); Рол Амай ( лосось, помідор, японський майонез, млинець японський); Рол Макан ( філадельфія, ікра червона, млинець японський); Рол Флеш ( лосось, авокадо, японський омлет, японський майонез, масаго); Рол Філадельфія Сякі ( лосось, філадельфія); Рол Пачі (окунь, помідор, японський омлет, японський майонез, масаго); Рол Дракон ( вугор, філадельфія, огірок, масаго); Рол Окінава ( сніжний краб, огірок, японський омлет, японський майонез, масаго)",
+                    Price = 975,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Лакшері",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/001-78-s-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Філадельфія Крабс ( лосось, сніжний краб, авокадо, огірок, філадельфія); Рол Чорний Самурай ( лосось теріякі, філадельфія, огірок, цибуля зелена, тобіко, кунжут); Рол Бронзовий Дракон ( вугор, філадельфія, авокадо, соус унагі, кунжут); Рол Фреш Крабс",
+                    Price = 520,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Асорті Макет",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/meket-44a-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Рол Чорний Самурай ( лосось теріякі, філадельфія, огірок, зелена цибуля, ікра тобіко, кунжут); Рол Лава ( вугор, куряча грудинка копчена, айсберг, огірок, спайсі соус, унагі соус, кунжут); Рол з Беконом ( бекон копчений, вугор, філадельфія, зелена цибуля; Рол Тері (лосось теріякі, айсберг, огірок, сир Філадельфія, ікра Масаго)",
+                    Price = 200,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 6
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Грибна",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/412-201-D0-93-D1-80-D0-B8-D0-B1-D0-BD-D0-B0-300x200.png",
+                    Weight = 530,
+                    Ingredients = "Шампіньйони свіжі, моцарела, шампіньйони консервовані, соус пелаті",
+                    Price = 95,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Шинок",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/407-D0-971-20-D1-88-D0-B8-D0-BD-D0-BA-D0-BE-D1-8E-300x200.png",
+                    Weight = 500,
+                    Ingredients = "Шинка, шампіньйони, моцарела, соус пелаті",
+                    Price = 110,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Вегетеріанська",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/410-1-D0-92-D0-B5-D0-B3-D0-B0-D1-82-D0-B8-D1-80-D1-96-D0-B0-D0-BD-D1-81-D1-8C-D0-BA-D0-B0-300x200.png",
+                    Weight = 530,
+                    Ingredients = "Моцарела, помідор, перець болгарський, шампіньйони, маслини, цибуля кримська, соус пелаті",
+                    Price = 88,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Міт Мікс",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/406-1-D0-9C-D1-8F-D1-81-D0-BD-D0-B0-20-D0-A4-D0-B0-D0-BD-D1-82-D0-B0-D0-B7-D1-96-D1-8F-300x200.png",
+                    Weight = 580,
+                    Ingredients = "Салямі, мисливські ковбаски, бекон, посідор, цибуля порей, моцарела, соус пелаті",
+                    Price = 142,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Діабло",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/418-1-D0-93-D0-BE-D1-81-D1-82-D1-80-D0-B0-300x200.jpg",
+                    Weight = 510,
+                    Ingredients = "Шинка, салямі, гострий перець, моцарела",
+                    Price = 125,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Салямі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/419-1-D0-A1-D0-B0-D0-BB-D1-8F-D0-BC-D1-96-300x200.jpg",
+                    Weight = 510,
+                    Ingredients = "Салямі, моцарела, помідор, соус пелаті",
+                    Price = 130,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Цезар",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/417-1-D0-A6-D0-B5-D0-B7-D0-B0-D1-80-300x200.jpg",
+                    Weight = 550,
+                    Ingredients = "Курка, моцарила, помідор, айсберг, соус цезар, соус пелаті",
+                    Price = 135,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Папероні",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/416-1-D0-9F-D0-B0-D0-BF-D0-B5-D1-80-D0-BE-D0-BD-D1-96-300x200.jpg",
+                    Weight = 530,
+                    Ingredients = "Салямі, папероні, моцарела, помідор, болгарський перець, соус пелаті",
+                    Price = 130,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "З лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/413-1-D0-A4-D1-96-D0-BB-D0-B0-300x200.jpg",
+                    Weight = 510,
+                    Ingredients = "Моцарела, філадельфія, лосось, соус пелаті",
+                    Price = 165,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Мексиканська",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/411-1-D0-9C-D0-B5-D0-BA-D1-81-D0-B8-D0-BA-D0-B0-D0-BD-D1-81-D1-8C-D0-BA-D0-B0-300x200.png",
+                    Weight = 530,
+                    Ingredients = "Моцарела, прошуто, помідор, гострий перець, цибуля кримська, петрушка, соус пелаті",
+                    Price = 145,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Реджина",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/414-1-D0-A7-D1-96-D0-BA-D0-B5-D0-BD-300x200.jpg",
+                    Weight = 575,
+                    Ingredients = "Курка, бекон, шампіньйони, помідор, цибуля кримська, моцарела, соус пелаті",
+                    Price = 115,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Артишок",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/408-1-D0-90-D1-80-D1-82-D0-B8-D1-88-D0-BE-D0-BA-300x200.png",
+                    Weight = 530,
+                    Ingredients = "Курка, артишоком, моцарела, фета, соус пелаті",
+                    Price = 125,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Три м'яса",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/409-1-D0-9F-D1-96-D1-86-D0-B0-203-20-D0-9C-D1-8F-D1-81-D0-B0-300x200.png",
+                    Weight = 615,
+                    Ingredients = "Прошуто, шинка, курка, помідор, шампіньйони, цибуля кримська, моцарела, соус пелаті",
+                    Price = 145, 
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Маргарита",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/405-1-D0-9C-D0-B0-D1-80-D0-B3-D0-B0-D1-80-D0-B8-D1-82-D0-B0-300x200.png",
+                    Weight = 450,
+                    Ingredients = "Моцарела, соус пелаті",
+                    Price = 79,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Квадро Формаджі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/404-1-D0-9A-D0-B2-D0-B0-D0-B4-D1-80-D0-BE-20-D0-A4-D0-BE-D1-80-D0-BC-D0-B0-D0-B4-D0-B6-D0-BE-300x200.png",
+                    Weight = 495,
+                    Ingredients = "Пармезан, дор блю, моцарела, фета",
+                    Price = 149,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Капрічоза",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/403-1-D0-9A-D0-B0-D0-BF-D1-80-D1-96-D1-87-D1-96-D0-BE-D0-B7-D0-B0-300x200.png",
+                    Weight = 590,
+                    Ingredients = "Шинка, артишоки, шампіньйони, помідор, моцарела, маслини",
+                    Price = 135,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Гавайська",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/402-1-20-D0-93-D0-B0-D0-B2-D0-B0-D0-B9-D1-81-D1-8C-D0-BA-D0-B0-300x200.png",
+                    Weight = 500,
+                    Ingredients = "Ананас, моцарела, шинка, орегано",
+                    Price = 95,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 7
                 };
                 context.Products.Add(product);
                 context.SaveChanges();
