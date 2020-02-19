@@ -8,7 +8,14 @@ namespace Food_Delivery.View_Models
 {
     public class LoginViewModel
     {
+        [Required(ErrorMessage = "*Введіть логін")]
+        [Display(Name = "Login")]
         public string Login { get; set; }
+
+        [Required(ErrorMessage = "*Введіть пароль")]
+        [DataType(DataType.Password)]
+        [Display(Name = "Пароль")]
+        [RegularExpression(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,24}$", ErrorMessage = ("*Некоректний пароль"))]
         public string Password { get; set; }
     }
 }

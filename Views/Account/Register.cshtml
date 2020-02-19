@@ -6,43 +6,43 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Мій акаунт</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
 </head>
 <body>
     <form class="register" asp-controller="Account" asp-action="Register">
         <h1 class="header">Реєстрація</h1>
         <p class="mass">Створіть свій власний обліковий запис</p>
         <div>
-            <label asp-for="Login" id="reg-login">Логін *</label><br />
+            <label asp-for="Login">Логін *</label><br />
             <input asp-for="Login" />
             <span asp-validation-for="Login"></span>
-            <p id="reg-errorlogin"></p>
         </div>
         <div>
-            <label asp-for="Email" id="reg-email">Адреса Електронної Пошти *</label><br />
+            <label asp-for="Email">Адреса Електронної Пошти *</label><br />
             <input asp-for="Email" />
             <span asp-validation-for="Email"></span>
-            <p id="reg-errorpassword"></p>
         </div>
         <div>
-            <label asp-for="FirstName" id="reg-firstname">Ім'я *</label><br />
+            <label asp-for="FirstName">Ім'я *</label><br />
             <input asp-for="FirstName" />
             <span asp-validation-for="FirstName"></span>
-            <p id="reg-errorreg-firstname"></p>
         </div>
         <div>
-            <label asp-for="LastName" id="reg-lastname">Прізвище *</label><br />
+            <label asp-for="LastName">Прізвище *</label><br />
             <input asp-for="LastName" />
             <span asp-validation-for="LastName"></span>
-            <p id="reg-errorreg-lastname"></p>
         </div>
         <div>
-            <label asp-for="Password" id="reg-password">Пароль *</label><br />
+            <label asp-for="Password">Пароль *</label><br />
             <input asp-for="Password" />
             <span asp-validation-for="Password"></span>
-            <p id="reg-errorreg-lastname"></p>
         </div>
         <div>
-            <label asp-for="PasswordConfirm" id="reg-password">Повторіть пароль *</label><br />
+            <label asp-for="PasswordConfirm">Повторіть пароль *</label><br />
             <input asp-for="PasswordConfirm" />
             <span asp-validation-for="PasswordConfirm"></span>
         </div>
@@ -50,7 +50,6 @@
             <input type="submit" class="submit" value="Реєстрація" />
         </div>
     </form>
-    <script src="~/js/registration-validation.js"></script>
 </body>
 </html>
 

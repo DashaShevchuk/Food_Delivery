@@ -48,7 +48,7 @@ namespace Food_Delivery.Controllers
             var user = _context.Users.FirstOrDefault(u => u.Email == model.Login);
             if (user == null)
             {
-                ModelState.AddModelError("", "Некоректний логін");
+                ModelState.AddModelError(string.Empty, "Некоректний логін");
                 return View(model);
             }
 
@@ -57,7 +57,7 @@ namespace Food_Delivery.Controllers
 
             if (!result.Succeeded)
             {
-                ModelState.AddModelError("", "Некоректний пароль");
+                ModelState.AddModelError(string.Empty, "Некоректний пароль");
                 return View(model);
             }
 
