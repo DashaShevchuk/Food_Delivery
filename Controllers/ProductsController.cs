@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Food_Delivery.Data.Interfaces;
 using Food_Delivery.Data.Models;
 using Food_Delivery.View_Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Food_Delivery.Controllers
 {
@@ -23,6 +25,14 @@ namespace Food_Delivery.Controllers
         [Route("Products/ListProducts/{category}")]
         public ViewResult ListProducts(string category)
         {
+            //це можна для корзини зробити
+            var info = HttpContext.Session.GetString("SessionUserData");
+            if(info != null)
+            {
+                var result = JsonConvert.DeserializeObject<UserInfo>(info);
+            }
+
+
             IEnumerable<Product> products = null;
             string productCategory = "";
 

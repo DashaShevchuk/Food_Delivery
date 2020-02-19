@@ -56,6 +56,9 @@ namespace Food_Delivery
             services.AddTransient<IProduct, ProductRepository>();
             services.AddTransient<ICategory, CategoryRepository>();
 
+            services.AddMemoryCache();
+            services.AddSession();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -75,7 +78,9 @@ namespace Food_Delivery
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            //app.UseCookiePolicy();
+            app.UseSession();
+
 
             //Seeder.SeedRoles(app.ApplicationServices, env, this.Configuration);
             //Seeder.SeedUsers(app.ApplicationServices, env, this.Configuration);

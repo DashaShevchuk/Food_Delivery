@@ -59,7 +59,7 @@ using Food_Delivery.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fbd76cfc7a84a0793c8092709676004", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9304fa704da04d1ebfc604d4fd7b8250", async() => {
                 BeginContext(33, 94, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>ListProducts</title>\r\n");
                 EndContext();
@@ -79,7 +79,7 @@ using Food_Delivery.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(136, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98ae33132866427a8c9d145886abffbb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "214b85d3bb64446f8ff3017b86d68ded", async() => {
                 BeginContext(142, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();

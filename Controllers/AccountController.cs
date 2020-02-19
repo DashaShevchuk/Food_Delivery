@@ -9,8 +9,10 @@ using Food_Delivery.Data.Models;
 using Food_Delivery.View_Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Food_Delivery.Controllers
 {
@@ -64,6 +66,15 @@ namespace Food_Delivery.Controllers
             await _signInManager.SignInAsync(user, isPersistent: false);
 
             await Authenticate(model.Login);
+
+            var userinfo = new UserInfo()
+            {
+                UserId = user.Id,
+                Email = user.Email
+            };
+
+            HttpContext.Session.SetString("SessionUserData", JsonConvert.SerializeObject(userinfo));
+
             return RedirectToAction("Index", "Home");
         }
 
