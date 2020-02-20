@@ -1872,6 +1872,654 @@ namespace Food_Delivery.Data.EFContext
                     CategoryId = 7
                 };
                 context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис з морепродуктами",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-813-Рис-з-морепродуктами-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Рис варений, Морський коктейль, Болгарський перець, Цибуля ріпчаста, Соєвий соус, Часник, 7 спецій, соус Пад Тай",
+                    Price = 99,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис з морепродуктами",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-812-Рис-з-лососем-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Рис варений, Лосось, Болгарський перець, Цибуля ріпчаста, Соєвий соус, Часник, 7 спецій, соус Пад Тай",
+                    Price = 129,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис з мідіями",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-811-Рис-з-мідіями-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Рис варений, М’ясо мідії, Болгарський перець, Цибуля ріпчаста, Соєвий соус, Часник, 7 спецій, соус Пад Тай",
+                    Price = 79,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис зі свининою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-810-Рис-зі-свининою-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Рис варений, Полядвиця свинна, Болгарський перець, Цибуля ріпчаста, Соєвий соус, Часник, 7 спецій, Кунжут білий, соус Пад Тай",
+                    Price = 75,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис з куркою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-809-Рис-з-куркою-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Рис варений, Філе куряче, Болгарський перець, Цибуля ріпчаста, Соєвий соус, Часник, 7 спецій, соус Пад Тай",
+                    Price = 67,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис з овочами",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-808-Рис-з-овочами-300x200.png",
+                    Weight = 220,
+                    Ingredients = "Рис варений, Перець болгарский, Цибуля ріпчаста, Соєвий соус, Часник, 7 спецій, соус Пад Тай",
+                    Price = 55,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис Смажений",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-807-Рис-Смажений-300x200.png",
+                    Weight = 220,
+                    Ingredients = "Рис, Часник, Соєвий соус",
+                    Price = 45,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рис паровий",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-806-Рис-паровий-300x200.png",
+                    Weight = 200,
+                    Ingredients = "Рис варений, Цибуля зелена",
+                    Price = 35,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Соба з овочами",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-805-Соба-з-овочами-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Соба варена, Перець болгарський,Цибуля ріпчаста, Помідор, 7 спецій, Соєвий соус, соус Пад Тай",
+                    Price = 69,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Удон з лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-804-Удон-з-лососем-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Удон Варений, Лосось, Перець болгарський, 7 спецій, Цибуля ріпчата, Соєвий соус, соус Пад Тай",
+                    Price = 129,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Удон з кальмаром",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-803-Удон-з-кальмаром-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Удон Варений, Кальмар трубчастий, Перець болгарський, 7 Спецій, Цибуля ріпчаста, Соєвий соус, соус Пад Тай",
+                    Price = 110,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Удон зі свинею",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-802-Удон-зі-свиноною-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Удон варений, Полядвиця свинна, Перець болгарський, 7 спецій, Цибуля ріпчаста, Соєвий соус, соус Пад Тай",
+                    Price = 105,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Удон Торі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-801-Удон-Торі-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Удон варений, Філе куряче, Перець болгарський, 7 спецій, Цибуля ріпчаста, соєвий соус, соус Пад Тай",
+                    Price = 95,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 8
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Місо з лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-714-Місо-з-лососем-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Соєвий соус, Хондаші, Шиитаке, Вакаме, Місо паста світла, Місо паста темна, Цибуля зелена, Лосось, Сир тофу",
+                    Price = 120,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Місо з креветками",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-713-Місо-з-креветками-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Соєвий соус, Хондаші, Шиитакі, Місо паста світла, Місо паста темна, Водорості вакаме, Тофу, Креветки, Цибуля зелена",
+                    Price = 125,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Місо з вугрем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-712-Місо-з-вугрем-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Місо паста світла, Місо паста темна, Хондаші, Соєвий, Шиитаке гриб, Вакаме, Тофу, Цибуля зелена, Вугор копчений",
+                    Price = 119,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Місо Суфідо",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-711-Місо-сіфудо-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Соєвий соус, Місо паста світла, Місо паста темна, Хондаші, Вакаме, Тофу, Помідор, Морський коктейль, Шиитаке",
+                    Price = 95,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Місо",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-710-Місо-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Соєвий соус, Місо паста світла, Місо паста темна, Тофу, Водорості вакаме, Зелена цибуля",
+                    Price = 80,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Клер суп",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-709-Клер-суп-300x200.png",
+                    Weight = 250,
+                    Ingredients = "Водорості Вакаме, Цибуля зелена, Тофу, Хундаші, Соєвий соус",
+                    Price = 75,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Том Ям Торі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-708-Том-Ям-Торі-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Кокосове молоко, Куряче філе, Соєвий соус, Шампіньйони, Помідори чері, Тайська паста, Рибний соус, Лимонна трава, Листя кафіра, 7 спецій, Соус ширачі, Лимонний Сік",
+                    Price = 109,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Том Кха Торі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-707-Том-Кха-Торі-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Кокосове молоко, Помідор, Куряче філе, Соєвий соус, Шампільйони, Рибний соус, Лимонна трава, Листя кафіра, Лимонний сік",
+                    Price = 99,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Том Ям Ебі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-706-Том-Ям-Ебі-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Кокосове молоко, Креветки тигрові, Кальмар трубчастий, Соєвий соус, Шампільйони, Рибний соус, Лимонна трава, Листя кафіра, Тайська паста, Соус ширачі, Лимонний сік, 7 спецій",
+                    Price = 165,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Том Кха Ебі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-705-Том-Кха-Ебі-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Кокосове молоко, Креветки, Соєвий соус, Шампіньйони, Рибний соус, Лимонна трава, Лист Кафіра, Лимонний сік",
+                    Price = 137,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рамен зі свининою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-702-Рамен-зі-свининою-300x200.png",
+                    Weight = 270,
+                    Ingredients = "Полядвиця Варена, Удон варений ,Соєвий соус, 7 спецій, Яйце куряче, Цибуля зелена, соус Пад Тай",
+                    Price = 75,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Рамен",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/001-701-Рамен.jpeg-300x200.png",
+                    Weight = 300,
+                    Ingredients = "Куряче філе, Удон варений, Соєвий соус, 7 спецій, Яйце куряче, Цибуля зелена, соус Пад Тай",
+                    Price = 69,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 9
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Марсель",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/608-20-D0-9C-D0-B0-D1-80-D1-81-D0-B5-D0-BB-D1-8C1-300x200.png",
+                    Weight = 230,
+                    Ingredients = "Лосось смажений, яйце куряче, айсберг, помідор, кукурудза, оливкова олія, діжонська гірчиця",
+                    Price = 115,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Цезар з тигровими криветками",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/607-20-D0-A6-D0-B5-D0-B7-D0-B0-D1-80-20-D0-B7-20-D0-9A-D1-80-D0-B5-D0-B2-D0-B5-D1-82-D0-BA-D0-B0-D0-BC-D0-B81-300x200.png",
+                    Weight = 200,
+                    Ingredients = "Тигрові креветки, пармезан, помідор чері, айсберг, сухарики, соус цезар",
+                    Price = 86,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Цезар з копченим лососем",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/salat13-300x200.jpg",
+                    Weight = 200,
+                    Ingredients = "Копчений лосось, пармезан, помідор чері, айсберг, сухарики, соус цезар",
+                    Price = 108,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Цезар з куркою",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/605-cesar1-300x200.jpg",
+                    Weight = 200,
+                    Ingredients = "Запечена куряча грудинка, пармезан, помідор чері, айсберг, сухарики, соус цезар",
+                    Price = 79,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Грецький",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/grechkuy-300x200.jpg",
+                    Weight = 200,
+                    Ingredients = "Огірок, помідор, перець болгарський, айсберг, цибуля кримська, оливки, маслини, сир фета",
+                    Price = 59,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Салат з криветками",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/603-20-D0-A1-D0-B0-D0-BB-D0-B0-D1-82-20-D0-B7-20-D0-BA-D1-80-D0-B5-D0-B2-D0-B5-D1-82-D0-BA-D0-B0-D0-BC-D0-B81-300x200.png",
+                    Weight = 200,
+                    Ingredients = "Креветка, авокадо, сухарики, масаго оранжева, спайсі соус",
+                    Price = 128,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Чука",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/greckuy-300x200.jpg",
+                    Weight = 200,
+                    Ingredients = "Чука заправлена горіховим соусом",
+                    Price = 65,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Ето",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/602-1-300x200.png",
+                    Weight = 200,
+                    Ingredients = "Запечена курка, суші рис, яйце куряче, авокадо, масаго оранжева, спайсі соус, тофу",
+                    Price = 95,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 10
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH морс із журавлини",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/01/cranberry_juice-300x200.jpg",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH томатний",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/08/sok-rich-tomatnyj-new-300x200.jpg",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Fanta",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/D0-A4-D0-B0-D0-BD-D1-82-D0-B0_PNG-300x200.jpg",
+                    Weight = 500,
+                    Ingredients = "",
+                    Price = 24,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Sprite",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/D0-A1-D0-BF-D1-80-D0-B0-D0-B9-D1-82_PNG-300x200.jpg",
+                    Weight = 500,
+                    Ingredients = "",
+                    Price = 24,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Coca-Cola",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/D0-9A-D0-BE-D0-BA-D0-B0-D0-BA-D0-BE-D0-BB-D0-B0_PNG-300x200.jpg",
+                    Weight = 500,
+                    Ingredients = "",
+                    Price = 24,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH Банан-полуниця",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/banan-apelsun-300x200.jpg",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Nestea",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/nestea-300x200.jpg",
+                    Weight = 500,
+                    Ingredients = "Холодний чай Nestea – негазований безалкогольний напій",
+                    Price = 25,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "bonaqua сильногазована",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/bonaqa-gaz-300x200.jpg",
+                    Weight = 500,
+                    Ingredients = "Вода BONAQUA походить із глибин Землі. Bона видобувається із Сеноманського та Юрського водоносних горизонтів глибиною 220 и 380 метрів відповідно.",
+                    Price = 20,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "bonaqua негазована",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/bnakqa-negaz-300x200.jpg",
+                    Weight = 500,
+                    Ingredients = "Походить із глибин Землі. Bона видобувається із Сеноманського та Юрського водоносних горизонтів глибиною 220 и 380 метрів відповідно.",
+                    Price = 20,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "burn 0.25",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/burn-300x200.jpg",
+                    Weight = 0,
+                    Ingredients = "Безалкогольний енергетичний напій 18+",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH вишневий",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/vushnya-300x200.jpg",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH мультивітамін",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/rich-f-300x200.png",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH апельсиновий",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/rich-apelshun-300x200.jpg",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "RICH яблучний",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/jabluko-300x200.jpg",
+                    Weight = 1000,
+                    Ingredients = "",
+                    Price = 38,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 11
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Соус Унагі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/unagi.jpg",
+                    Weight = 50,
+                    Ingredients = "Солодкий ароматний соус",
+                    Price = 20,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Горіховий соус кешю",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/gorihovy.jpg",
+                    Weight = 50,
+                    Ingredients = "Горіховий соус – це дуже ніжна паста кремової консистенції зі смаком кунжуту надає стравам надзвичайний аромат і унікальний смак.",
+                    Price = 30,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Соус Спайсі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/spaysy.jpg",
+                    Weight = 50,
+                    Ingredients = "Гострий",
+                    Price = 30,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Соєвий соус Kikkoman",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/kikoman.jpg",
+                    Weight = 15,
+                    Ingredients = "",
+                    Price = 120,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Васабі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/vasabi-1.jpg",
+                    Weight = 20,
+                    Ingredients = "Wasabi",
+                    Price = 5,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Імбир",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/Imbir-280x190.jpg",
+                    Weight = 40,
+                    Ingredients = "Маринований",
+                    Price = 7,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
+                product = new Product
+                {
+                    Name = "Соус Кімчі",
+                    Image = "https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/06/kimchi.jpg",
+                    Weight = 50,
+                    Ingredients = "Гострий, пекучо-пряний на смак",
+                    Price = 25,
+                    Count = 1,
+                    IsOrdered = false,
+                    CategoryId = 12
+                };
+                context.Products.Add(product);
                 context.SaveChanges();
             }
         }

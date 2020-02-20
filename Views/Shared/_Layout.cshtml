@@ -50,22 +50,20 @@
             </div>
         </div>
     </nav>
-    <div class="menucolumn">
-        <div class="site-branding">
-            <a class="custom-logo-link">
-                <img width="98" height="110" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/cropped-sushiPiza.png" />
-            </a>
-        </div>
-    </div>
-    <partial name="_CookieConsentPartial" />
+    @*<partial name="_CookieConsentPartial" />*@
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2020 - Food_Delivery</p>
-        </footer>
-    </div>
+    <div class="d-flex justify-content-betwen">
+        <div class="body-content">
+
+            @await Component.InvokeAsync("Category")
+
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2020 - Food_Delivery</p>
+            </footer>
+        </div>
+    </div>    
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
