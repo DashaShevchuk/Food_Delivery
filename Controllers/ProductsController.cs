@@ -21,9 +21,9 @@ namespace Food_Delivery.Controllers
             _product = product;
             _category = category;
         }
-        [Route("Products/ListProducts")]
-        [Route("Products/ListProducts/{category}")]
-        public ViewResult ListProducts(string category)
+        [Route("Components/Category/Default")]
+        [Route("Components/Category/Default{category}")]
+        public ViewResult Default(string category)
         {
             //це можна для корзини зробити
             var info = HttpContext.Session.GetString("SessionUserData");

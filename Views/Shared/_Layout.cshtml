@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Food_Delivery</title>
+    @*<title>@ViewData["Title"] - Food_Delivery</title>*@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -30,7 +30,16 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="">Місто</a></li>  @*asp-action="Index" asp-controller="Home"*@
+                    <li>
+                        <select>
+                            @{ 
+                                foreach(var city in Model)
+                                {
+                                   
+                                }
+                            }
+                        </select>
+                    </li>  @*asp-action="Index" asp-controller="Home"*@
                     <li><a asp-area="">Про нас</a></li> @*asp-action="About" asp-controller="Home"*@
                     <li><a asp-area="">Кейтерінг</a></li> @*asp-action="Contact" asp-controller="Home"*@
                     <li><a asp-area="">Акції</a></li>
@@ -52,8 +61,8 @@
     </nav>
     @*<partial name="_CookieConsentPartial" />*@
 
-    <div class="d-flex justify-content-betwen">
-        <div class="body-content">
+    <div class="content">
+        <div class="body-content mt-5">
 
             @await Component.InvokeAsync("Category")
 

@@ -43,11 +43,6 @@ body {
     border-right: solid 1px #AFB4B8;
 }
 
-.nav-wraper {
-    margin-top: 100px;
-    width: 200px;
-}
-
 .link {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -100,16 +95,15 @@ li {
     font-size:16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.div-login{
-    margin-top:10px;
-    margin-bottom:10px;
+.login{
+   width:600px;
 }
-.list-sidebar {
-    list-style-type: none;
-    text-decoration: none;
-    width:200px;
+.side{
+    width: 200px;
+    padding: 5px;
 }
-.sidebar{
-    width:200px;
-    padding:5px;
+.content{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
 }

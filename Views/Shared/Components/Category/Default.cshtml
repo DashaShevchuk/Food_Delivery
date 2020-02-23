@@ -17,27 +17,24 @@
         @{
             foreach (var category in Model)
             {
-                <li class="link"><a class="link">   @category.Name</a></li> @*<img src="img/header/nav-icon1.png" alt="">*@ 
+                <li class="link"><a class="link">   @category.Name</a></li> @*<img src="img/header/nav-icon1.png" alt="">*@
 
 
-    <div class="nav-wraper">
-        <div class="navbar">
-            <ul class="nav">
-                <li>
-                    <div class="logo d-flex justify-content-center">
-                        <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/cropped-sushiPiza.png" alt="">
-                    </div>
-                </li>
-                <li class="link"><a class="link">Вся продукція</a></li>
-                <li class="divider"></li>
-                <li class="link"><a class="link">Вся продукція</a></li> @*<img src="img/header/nav-icon1.png" alt="">*@
-                @{
-                    foreach (var category in Model)
-                    {
-                        <li class="link"><a class="link">   @category.Name</a></li> @*<img src="img/header/nav-icon1.png" alt="">*@ }
-                }
-            </ul>
-        </div>
-    </div>
+    <ul class="nav side">
+        <li>
+            <div class="logo d-flex justify-content-center">
+                <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/cropped-sushiPiza.png" alt="">
+            </div>
+        </li>
+        <li class="link"><a class="link" asp-controller="Products" asp-action="Default" asp-route-category="">Вся продукція</a></li>
+        <li class="divider"></li>
+        <li class="link"><a class="link">Вся продукція</a></li> @*<img src="img/header/nav-icon1.png" alt="">*@
+        @{
+            foreach (var category in Model)
+            {
+                <li class="link"><a class="link" asp-controller="Products" asp-action="Default" asp-route-category="@category.Name">   @category.Name</a></li>
+                @*<img src="img/header/nav-icon1.png" alt="">*@ }
+        }
+    </ul>
 </body>
 </html>
