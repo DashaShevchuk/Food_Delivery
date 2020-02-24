@@ -138,7 +138,6 @@ C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\F
 C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Food_Delivery.dll
 C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Food_Delivery.pdb
 C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Food_Delivery.csproj.CopyComplete
-C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Food_Delivery.csprojAssemblyReference.cache
 C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\bin\Debug\netcoreapp2.1\Food_Delivery.deps.json
 C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\bin\Debug\netcoreapp2.1\Food_Delivery.runtimeconfig.json
 C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\bin\Debug\netcoreapp2.1\Food_Delivery.runtimeconfig.dev.json
@@ -177,3 +176,6 @@ C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\F
 C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Food_Delivery.csproj.CopyComplete
 C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
 C:\Users\sshevchuckaa\aaaa\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Razor\Views\Account\ChangePassword.g.cshtml.cs
+C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Razor\Views\Account\ForgotPassword.g.cshtml.cs
+C:\Users\user\Desktop\Work\Food_Delivery\Food_Delivery\obj\Debug\netcoreapp2.1\Razor\Views\Products\ListProducts.g.cshtml.cs

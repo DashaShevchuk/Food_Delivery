@@ -26,13 +26,13 @@
                 <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/12/cropped-sushiPiza.png" alt="">
             </div>
         </li>
-        <li class="link"><a asp-controller="Products" asp-action="ListProducts" asp-route-category="">Вся продукція</a></li>
+        <li><a class="link" asp-controller="Products" asp-action="ListProducts" asp-route-category="">Вся продукція</a></li>
         <li class="divider"></li>
         @{
             foreach (var category in Model)
             {
         <li class="link">
-            <a asp-controller="Products" asp-action="ListProducts"
+            <a a class="link" asp-controller="Products" asp-action="ListProducts"
                asp-route-category="@category.Name">
                 @category.Name
             </a>

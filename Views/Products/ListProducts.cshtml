@@ -11,16 +11,13 @@
 </head>
 <body>
     <div class="products">
-        <ul>
-            @{
-                foreach (Product product in Model.GetProducts)
-                {
-                    <li>
-                        @await Html.PartialAsync("AllProducts", product)
-                    </li>
-                }
+        @{
+            foreach (Product product in Model.GetProducts)
+            {
+                @await Html.PartialAsync("AllProducts", product)
+
             }
-        </ul>
+        }
     </div>
 </body>
 </html>

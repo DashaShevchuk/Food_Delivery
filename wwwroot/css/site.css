@@ -108,13 +108,42 @@ li {
     justify-content:space-between;
     flex-direction:row;
 }
-/*.products {
-    margin: 2px;
-    padding-left:20px;
-    padding-right:20px;
-}*/
+.products {
+    display:flex;
+    flex-wrap:wrap;
+}
 .all {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.card{
+    margin-left:2px;
+    margin-right:2px;
+    margin-top:2px;
+    margin-bottom:2px;
+    height:200px;
+    width:300px;
+}
+.card-body{
+    display:flex;
+    flex-direction:column;
+}
+.card-img-top {
+    width: 200px;
+    height: 100px;
+}
+.card-text {
+    color: #2D2626;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px;
+    align-content:center;
+    font-weight:200;
+}
+.weight {
+    color: #2D2626;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    align-content:flex-end;
+    font-weight:100;
 }
