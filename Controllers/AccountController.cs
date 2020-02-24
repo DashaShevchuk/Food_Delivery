@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -21,17 +22,76 @@ namespace Food_Delivery.Controllers
         private readonly UserManager<DbUser> _userManager;
         private readonly SignInManager<DbUser> _signInManager;
         private readonly EFDbContext _context;
+        private readonly IEmailSender _myemailSender;
 
 
         public AccountController(UserManager<DbUser> userManager,
              SignInManager<DbUser> signInManager,
-             EFDbContext context)
+             EFDbContext context, IEmailSender myemailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _context = context;
+            _myemailSender = myemailSender;
         }
-
+        [HttpGet]
+        [Route("Account/ChangePassword{id}")]
+        public IActionResult ChangePassword(string id)
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                //var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
+                //if (user == null)
+                //{
+                //    ModelState.AddModelError(string.Empty, "Цей email не зареєстрований");
+                //    return View(model);
+                //}
+                //var userName = user.UserProfile.FirstName;
+                //await _myemailSender.SendEmailAsync(model.Email, "Забув пароль",
+                //     $"Dear{userName}," +
+                //     $"</br>" +
+                //     $"To change your password " +
+                //     $"<br/>" +
+                //     $"you should visit this link<a href=''>press</a>"
+                //     );
+            }
+            return View(model);
+            // return RedirectToAction("Index", "Красіва сторіночка яка каже шо все добре");
+        }
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "Цей email не зареєстрований");
+                    return View(model);
+                }
+               // var userName = user.UserProfile.FirstName;
+                string url = "https://localhost:44315/Account/ChangePassword/" + user.Id;
+               await _myemailSender.SendEmailAsync("77dasha0377@gmail.com", "Забув пароль",
+                    //$"Dear{userName},"+
+                    $"</br>"+
+                    $"To change your password "+
+                    $"<br/>"+
+                    $"you should visit this link<a href='{url}'>press</a>"
+                    );
+            }
+            return View(model);
+           // return RedirectToAction("Index", "Красіва сторіночка яка каже шо все добре");
+        }
         [HttpGet]
         public IActionResult Login()
         {

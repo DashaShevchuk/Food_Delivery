@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListProducts</title>
+</head>
+<body>
+    <div class="products">
+        <ul>
+            @{
+                foreach (Product product in Model.GetProducts)
+                {
+                    <li>
+                        @await Html.PartialAsync("AllProducts", product)
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</body>
+</html>

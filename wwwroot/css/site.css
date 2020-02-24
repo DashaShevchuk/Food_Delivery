@@ -98,12 +98,23 @@ li {
 .login{
    width:600px;
 }
-.side{
+.side {
     width: 200px;
     padding: 5px;
+    align-items: flex-start;
 }
 .content{
     display:flex;
     justify-content:space-between;
     flex-direction:row;
+}
+/*.products {
+    margin: 2px;
+    padding-left:20px;
+    padding-right:20px;
+}*/
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
