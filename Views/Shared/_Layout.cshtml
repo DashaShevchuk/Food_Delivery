@@ -31,16 +31,16 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @*<li>
-                        <select>
-                            @{ 
-                                foreach(var city in Model)
-                                {
-                                   
+                            <select>
+                                @{
+                                    foreach(var city in Model)
+                                    {
+
+                                    }
                                 }
-                            }
-                        </select>
-                    </li> *@
-                    <li><a asp-area="">Про нас</a></li> 
+                            </select>
+                        </li> *@
+                    <li><a asp-area="">Про нас</a></li>
                     <li><a asp-area="">Кейтерінг</a></li>
                     <li><a asp-area="">Акції</a></li>
                     <li><a asp-area="">Оплата і доставка</a></li>
@@ -55,7 +55,7 @@
                         </form>
                     </li>
                 </ul>
-              
+
             </div>
         </div>
     </nav>
@@ -68,11 +68,13 @@
 
             @RenderBody()
             <hr />
+        </div>
+        <div>
             <footer>
                 <p>&copy; 2020 - Food_Delivery</p>
             </footer>
         </div>
-    </div>    
+    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

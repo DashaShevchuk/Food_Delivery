@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -71,7 +72,7 @@ namespace Food_Delivery.Controllers
         [HttpPost]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var user = _context.Users.FirstOrDefault(u => u.Email == model.Email);
                 if (user == null)
@@ -79,15 +80,34 @@ namespace Food_Delivery.Controllers
                     ModelState.AddModelError(string.Empty, "Цей email не зареєстрований");
                     return View(model);
                 }
-               // var userName = user.UserProfile.FirstName;
-                string url = "https://localhost:44315/Account/ChangePassword/" + user.Id;
-               await _myemailSender.SendEmailAsync("77dasha0377@gmail.com", "Забув пароль",
-                    //$"Dear{userName},"+
-                    $"</br>"+
-                    $"To change your password "+
-                    $"<br/>"+
-                    $"you should visit this link<a href='{url}'>press</a>"
-                    );
+              // var userName = user.UserProfile.FirstName;
+                // string url = "https://localhost:44315/Account/ChangePassword/" + user.Id;
+                //await _myemailSender.SendEmailAsync("m.rogach777@gmail.com", "Забув пароль",
+                //     //$"Dear{userName},"+
+                //     $"</br>"+
+                //     $"To change your password "+
+                //     $"<br/>"+
+                //     $"you should visit this link<a href='{url}'>press</a>"
+                //     );
+                //MailMessage mail = new MailMessage();
+                //SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                //string code = Guid.NewGuid().ToString();
+                //mail.From = new MailAddress("home.realtor.suport@gmail.com");
+                //mail.To.Add("77dasha0377@gmail.com");
+                //mail.Subject = "Forgot password";
+                //mail.IsBodyHtml = true;
+                //mail.Body = "" +
+                //"<head>" +
+                //"For change password :" +
+                //"</head>" +
+                //"<button>" +
+                //"press" +
+                //"</button>" +
+                //" </a>  ";
+                //SmtpServer.Port = 587;
+                //SmtpServer.Credentials = new System.Net.NetworkCredential("home.realtor.suport@gmail.com", "00752682");
+                //SmtpServer.EnableSsl = true;
+                //SmtpServer.Send(mail);
             }
             return View(model);
            // return RedirectToAction("Index", "Красіва сторіночка яка каже шо все добре");
@@ -157,7 +177,7 @@ namespace Food_Delivery.Controllers
 
                 DbUser user = new DbUser
                 {
-                    Email = model.Login,
+                    Email = model.Email,
                     UserName = model.Login,
                     UserProfile = userProfile
                 };

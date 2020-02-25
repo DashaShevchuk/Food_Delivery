@@ -24,7 +24,7 @@ namespace Food_Delivery.Services
 
         public Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
-            return Execute(_configuration.GetValue<string>("EmailGridKey"), subject, htmlMessage, email);
+            return Execute(/*_configuration.GetValue<string>("EmailGridKey")*/"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", subject, htmlMessage, email);
         }
 
 
