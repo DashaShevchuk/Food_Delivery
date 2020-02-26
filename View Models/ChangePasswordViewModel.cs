@@ -8,6 +8,7 @@ namespace Food_Delivery.View_Models
 {
     public class ChangePasswordViewModel
     {
+
         [Required(ErrorMessage = "*Введіть пароль")]
         [DataType(DataType.Password)]
         [Display(Name = "Пароль")]

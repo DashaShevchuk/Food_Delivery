@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Food_Delivery.Data.EFContext;
 using Food_Delivery.Data.Interfaces;
 using Food_Delivery.Data.Repository;
-using Food_Delivery.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -57,7 +56,6 @@ namespace Food_Delivery
 
             services.AddTransient<IProduct, ProductRepository>();
             services.AddTransient<ICategory, CategoryRepository>();
-            services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMemoryCache();
             services.AddSession();
