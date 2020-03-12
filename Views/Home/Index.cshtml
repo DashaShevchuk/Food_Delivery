@@ -3,14 +3,115 @@
 }
 <div class="buners">
     <div class="smallbuners">
-        <div class="baner">
-            <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/fish.jpg" />
+        <div class="smallbaner">
+            <img class ="smallbaner_img" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/fish.jpg" />
         </div>
-        <div class="baner">
-            <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/34.jpg" />
+        <div class="smallbaner">
+            <img class ="smallbaner_img" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/34.jpg" />
         </div>
     </div>
-    <div class="bigbaner">
-        <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/07/cashoo.jpg" />
+    <div class="bigbaners">
+        <div class="bigbaner">
+            <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/07/cashoo.jpg" />
+        </div>
     </div>
+    @*<div class="actionweek">
+        <div class="baner">
+            <img src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2020/02/asortiot.jpg"/>
+        </div>
+        <div>
+
+        </div>
+    </div>*@
+    <div class="combo">
+        <div class="baner">
+            <img class ="img_baner" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2019/10/1245tgv.jpg" />
+        </div>
+        <div class="sale_products">
+            @{
+                foreach (Product product in Model.SaleProducts)
+                {
+                    if (product.Name == "Комбо 1" || product.Name == "Комбо 2")
+                    {
+                        <div>
+                            @await Html.PartialAsync("AllProducts", product);
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+    <div class="cheesroles">
+        <div class="baner">
+            <img class ="img_baner" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/filadelf.jpg" />
+        </div>
+        <div class="sale_products">
+            @{
+                foreach (Product product in Model.SaleProducts)
+                {
+                    if (product.Name == "Рол Філадельфія Крабс" || product.Name == "Рол Філадельфія Унагі")
+                    {
+                        <div>
+                            @await Html.PartialAsync("AllProducts", product);
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+    <div class="tobigcompany">
+        <div class="baner">
+            <img class ="img_baner" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/Big-company.jpg" />
+        </div>
+        <div class="sale_products">
+            @{
+                foreach (Product product in Model.SaleProducts)
+                {
+                    if (product.Name == "Асорті 9 смаків" || product.Name == "Асорті МЕГА")
+                    {
+                        <div>
+                            @await Html.PartialAsync("AllProducts", product);
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+    <div class="spicypizza">
+        <div class="baner">
+            <img class ="img_baner" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2018/07/hoters.jpg" />
+        </div>
+        <div class="sale_products">
+            @{
+                foreach (Product product in Model.SaleProducts)
+                {
+                    if (product.Name == "Діабло" || product.Name == "Мексиканська")
+                    {
+                        <div>
+                            @await Html.PartialAsync("AllProducts", product);
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+    <div class="vega">
+        <div class="baner">
+            <img class ="img_baner" src="https://kvadratsushi.com/rivne/wp-content/uploads/sites/7/2016/09/06-HomePage-FullWidth-Sidebar.jpg" />
+        </div>
+        <div class="sale_products">
+            @{
+                foreach (Product product in Model.SaleProducts)
+                {
+                    if (product.Name == "Асорті Вега" || product.Name == "Вегетеріанська")
+                    {
+                        <div>
+                            @await Html.PartialAsync("AllProducts", product);
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+
 </div>

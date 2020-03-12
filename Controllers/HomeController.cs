@@ -6,15 +6,28 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Food_Delivery.Models;
 using Microsoft.AspNetCore.Authorization;
+using Food_Delivery.Services;
+using Microsoft.AspNetCore.Http;
+using Food_Delivery.Data.Interfaces;
+using Food_Delivery.View_Models;
 
 namespace Food_Delivery.Controllers
 {
     [Authorize(Roles ="User")]
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IProduct _products;
+        public HomeController(IProduct products)
         {
-            return View();
+            _products = products;
+        }
+        public ViewResult Index()
+        {
+            var products = new SaleProductsViewModel
+            {
+                SaleProducts = _products.GetSaleProducts
+            };
+            return View(products);
         }
 
         public IActionResult About()
@@ -40,6 +53,19 @@ namespace Food_Delivery.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        [HttpGet]
+        public ViewResult AddFilesForm()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddFilesForm(IFormFile uploadedFile)
+        {
+            FileService service = new FileService();
+            await service.AddFile(uploadedFile);
+            return RedirectToAction("Login", "Account");
         }
     }
 }

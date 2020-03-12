@@ -14,6 +14,7 @@ namespace Food_Delivery.Data.Models
         public int Weight { get; set; }
         public float Price { get; set; }
         public int Count { get; set; }
+        public bool Sale { get; set; }
         public bool IsOrdered { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }

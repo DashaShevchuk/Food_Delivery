@@ -16,6 +16,7 @@ namespace Food_Delivery.Data.EFContext
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<FileModel> Files { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

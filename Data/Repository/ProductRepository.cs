@@ -18,6 +18,10 @@ namespace Food_Delivery.Data.Repository
         }
         public IEnumerable<Product> GetProducts => _context.Products.Include(x => x.Category);
 
+        public IEnumerable<Product> GetSaleProducts => _context.Products
+            .Where(p => p.Sale)
+            .Include(x => x.Category);
+
         public Product GetProduct(int ProductId) => _context.Products.FirstOrDefault(c => c.Id == ProductId);
     }
 }

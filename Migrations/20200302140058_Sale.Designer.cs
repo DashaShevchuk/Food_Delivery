@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Food_Delivery.Migrations
 {
     [DbContext(typeof(EFDbContext))]
-    [Migration("20200220150206_Migration1")]
-    partial class Migration1
+    [Migration("20200302140058_Sale")]
+    partial class Sale
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -135,6 +135,20 @@ namespace Food_Delivery.Migrations
                     b.ToTable("Cities");
                 });
 
+            modelBuilder.Entity("Food_Delivery.Data.Models.FileModel", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Path");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Files");
+                });
+
             modelBuilder.Entity("Food_Delivery.Data.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -154,6 +168,8 @@ namespace Food_Delivery.Migrations
                     b.Property<string>("Name");
 
                     b.Property<float>("Price");
+
+                    b.Property<bool>("Sale");
 
                     b.Property<int>("Weight");
 

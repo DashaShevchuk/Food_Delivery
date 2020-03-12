@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Food_Delivery.Migrations
 {
-    public partial class Migration1 : Migration
+    public partial class Sale : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -71,6 +71,19 @@ namespace Food_Delivery.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cities", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Files",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Name = table.Column<string>(nullable: true),
+                    Path = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Files", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -211,6 +224,7 @@ namespace Food_Delivery.Migrations
                     Weight = table.Column<int>(nullable: false),
                     Price = table.Column<float>(nullable: false),
                     Count = table.Column<int>(nullable: false),
+                    Sale = table.Column<bool>(nullable: false),
                     IsOrdered = table.Column<bool>(nullable: false),
                     CategoryId = table.Column<int>(nullable: false)
                 },
@@ -289,6 +303,9 @@ namespace Food_Delivery.Migrations
 
             migrationBuilder.DropTable(
                 name: "Cities");
+
+            migrationBuilder.DropTable(
+                name: "Files");
 
             migrationBuilder.DropTable(
                 name: "Products");
